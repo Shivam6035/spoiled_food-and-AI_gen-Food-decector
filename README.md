@@ -155,29 +155,36 @@ Initial baseline attempted classical ML. Failed predictably:
 
 FoodAIVision/
 ├── data/
-│ ├── raw/ # Original images
-│ ├── processed/ # Preprocessed (224×224)
-│ └── splits/ # Train/Val/Test
+│   ├── raw/                    # Original images
+│   ├── processed/              # Preprocessed (224×224)
+│   └── splits/                 # Train/Val/Test
+│
 ├── models/
-│ ├── ai_detection/ # EfficientNet + FFT
-│ ├── spoilage_detection/ # Vision Transformer
-│ └── contamination/ # YOLO
+│   ├── ai_detection/           # EfficientNet + FFT
+│   ├── spoilage_detection/     # Vision Transformer
+│   └── contamination/          # YOLO
+│
 ├── preprocessing/
-│ ├── preprocessing.py # Clean & resize
-│ ├── organise_dataset.py # Task-based split
-│ ├── split_dataset.py # Train/Val/Test split
-│ ├── tensor_pipeline.py # Tensor conversion
-│ └── visualize_batch.py # Verification
+│   ├── preprocessing.py        # Clean & resize
+│   ├── organise_dataset.py     # Task-based split
+│   ├── split_dataset.py        # Train/Val/Test split
+│   ├── tensor_pipeline.py      # Tensor conversion
+│   └── visualize_batch.py      # Verification
+│
 ├── training/
-│ ├── train_ai_detection.py
-│ ├── train_spoilage.py
-│ └── train_contamination.py
+│   ├── train_ai_detection.py   # EfficientNet training
+│   ├── train_spoilage.py       # ViT training
+│   └── train_contamination.py  # YOLO training
+│
 ├── inference/
-│ └── pipeline.py # Multi-stage inference
+│   └── pipeline.py             # Multi-stage inference
+│
 ├── frontend/
-│ └── app.py # Flask/React UI
+│   └── app.py                  # Flask/React UI
+│
 └── deployment/
-└── Dockerfile # Production containerization
+    └── Dockerfile              # Production containerization
+    
 
 
 ---
