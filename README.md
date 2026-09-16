@@ -153,6 +153,13 @@ Initial baseline attempted classical ML. Failed predictably:
 
 ## 📂 Repository Structure
 
+# FoodAIVision
+
+Project directory structure and architecture overview.
+
+## Project Structure
+
+```text
 FoodAIVision/
 ├── data/
 │   ├── raw/                    # Original images
@@ -184,10 +191,7 @@ FoodAIVision/
 │
 └── deployment/
     └── Dockerfile              # Production containerization
-    
-
-
----
+```
 
 ## 🎯 Quick Start
 
